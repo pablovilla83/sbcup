@@ -1,0 +1,92 @@
+<template name="events">
+  <h2>Eventos</h2>
+  <hr/>
+  <!-- <div class="card teal">
+  <div class="card-content">
+  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+</div>
+<div class="card-tabs">
+<ul class="tabs tabs-fixed-width tabs-transparent">
+<li class="tab"><a href="#test4">Test 1</a></li>
+<li class="tab"><a class="active" href="#test5">Test 2</a></li>
+<li class="tab"><a href="#test6">Test 3</a></li>
+</ul>
+</div>
+<div class="card-content teal lighten-4">
+<div id="test4">Test 1</div>
+<div id="test5">Test 2</div>
+<div id="test6">Test 3</div>
+</div>
+</div> -->
+<div class="row">
+  <div class="col s12 m6">
+    <div class="card">
+      <div class="card-image">
+        <img src="/img/new-sw-bg.jpg">
+        <span class="card-title">Registrar una edición de Startup Weekend</span>
+        <a class="btn-floating btn-large halfway-fab waves-effect waves-light orange darken-4"><i class="material-icons">add</i></a>
+      </div>
+      <div class="card-content">
+        <p>Hola organizador! Gracias por utilizar el community site. Utiliza esta tarjeta si deseas registrar una nueva edición de Startup Weekend. A continuación se te solicitará información básica de tu evento.</p>
+        <p>Recuerda siempre tratar de actualizar cualquier cambio a tu evento e invitar a tus participantes a que se registren en el community site.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m6">
+    <div class="card-panel">
+      <h2>Registrarme a un Startup Weekend</h2>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="codigo_evento" type="text" class="validate">
+              <label for="codigo_evento">Código de Evento</label>
+            </div>
+            <div class="input-field col s6">
+              <select>
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="hustler">Hustler</option>
+                <option value="hacker">Hacker</option>
+                <option value="designer">Designer</option>
+                <option value="expert">Expert</option>
+              </select>
+              <label>Perfil</label>
+            </div>
+          </div>
+          <button class="btn waves-effect waves-light orange darken-4" type="submit" name="action">Enviar
+            <i class="material-icons right">send</i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<h2>Startup Weekend's activos</h2>
+<hr/>
+//Poner mapa aqui?
+<table class="responsive-table highlight striped">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>País</th>
+      <th>Ciudad</th>
+      <th>Fecha de Inicio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Startup Weekend Mega Centro 2</td>
+      <td>Mexico</td>
+      <td>Zacatecas</td>
+      <td>28/04/2017</td>
+    </tr>
+    <tr>
+      <td>Startup Weekend Mega Centro 2</td>
+      <td>Mexico</td>
+      <td>Zacatecas</td>
+      <td>28/04/2017</td>
+    </tr>
+  </tbody>
+</table>
+</template>

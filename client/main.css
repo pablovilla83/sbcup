@@ -1,1 +1,133 @@
-/* CSS declarations go here */
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+
+ /* Custom Stylesheet */
+ /**
+  * Use this file to override Materialize files so you can update
+  * the core Materialize files in the future
+  *
+  * Made By MaterializeCSS.com
+  */
+ p {
+   line-height: 2rem;
+ }
+
+ .button-collapse {
+     color: #26a69a;
+ }
+
+ #nav-mobile {
+   color: black;
+ }
+
+ nav .brand-logo {
+     left: 50%;
+     transform: translateX(-50%);
+     /*line-height: 80px;*/
+ }
+
+ .btn-floating.halfway-nav {
+     position: absolute;
+     left: 0px;
+     bottom: -20px;
+ }
+
+ @media only screen and (min-width: 993px){
+   nav a.button-collapse {
+       display: block;
+   }
+ }
+
+ nav .brand-logo i {
+  height: 56px;
+  line-height: 56px;
+  display: block;
+}
+
+ @media only screen and (min-width: 620px){
+
+ }
+
+ .parallax-container {
+   min-height: 380px;
+   line-height: 0;
+   height: auto;
+   color: rgba(255,255,255,.9);
+ }
+   .parallax-container .section {
+     width: 100%;
+   }
+
+ @media only screen and (max-width : 992px) {
+   .parallax-container .section {
+     position: absolute;
+     top: 40%;
+   }
+   #index-banner .section {
+     top: 10%;
+   }
+ }
+
+ @media only screen and (max-width : 600px) {
+   #index-banner .section {
+     top: 0;
+   }
+ }
+
+ .icon-block {
+   padding: 0 15px;
+ }
+ .icon-block .material-icons {
+   font-size: inherit;
+ }
+
+ footer.page-footer {
+   margin-top: 50px;
+   padding-top: 0px; /*quitar si se pone un footer mas complejo*/
+ }
+
+ #login-buttons .login-button, .accounts-dialog .login-button {
+   background: #00cdcd;
+   border: 1px solid #008181;
+   color: black;
+ }
+ #login-buttons .login-display-name {
+   color: #00cdcd;
+ }
+ #login-buttons .login-button:hover, .accounts-dialog .login-button:hover {
+     background: #009a9a;
+ }
+
+ .cx {
+   padding-top: 25px;
+ }
+
+ .profile-bg {
+   height: 220px;
+   /*background: url(./img/profile-bg.jpg);*/
+   background: url(./img/profile-4-bg.jpg);
+   background-repeat:no-repeat;
+ }
+
+ .side-nav li > a > i, .side-nav li > a > [class^="mdi-"], .side-nav li > a li > a > [class*="mdi-"], .side-nav li > a > i.material-icons {
+   margin :0px;
+ }
+
+ .side-nav li > a {
+   font-size: 16px;
+ }
+
+ .side-nav .divider {
+   margin: 0px;
+ }
+
+.side-nav li > a > i, .side-nav li > a {
+  height: 40px;
+  line-height: 40px;
+}
