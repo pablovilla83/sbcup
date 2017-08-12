@@ -6,6 +6,7 @@ import './results.html';
 Template.results.onCreated(function(){
 	this.autorun(() => {
   		this.subscribe('players');
+      this.subscribe('games');
 	});
 });
 
@@ -15,5 +16,8 @@ Template.results.helpers ({
   },
   'groupBplayers': function(){
   		return Players.find({group: 'B'}, {sort: {"Pts": -1, "GD": -1}});
+  },
+  'round1Games': function(){
+  		return Games.find({round: "1"});
   }
 });

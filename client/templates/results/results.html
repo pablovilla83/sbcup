@@ -3,68 +3,105 @@
     <h1>Results</h1>
     <div class="">
       <h5>Group A</h5>
-        <table class="highlight responsive-table">
-          <thead>
-            <tr>
-                <th>Name</th>
-                <th>MP</th>
-                <th>W</th>
-                <th>D</th>
-                <th>L</th>
-                <th>GF</th>
-                <th>GA</th>
-                <th>GD</th>
-                <th>Pts</th>
-            </tr>
-          </thead>
-          <tbody>
-            {{#each groupAplayers}}
-            <tr>
-              <td>{{name}}</td>
-              <td>{{MP}}</td>
-              <td>{{W}}</td>
-              <td>{{D}}</td>
-              <td>{{L}}</td>
-              <td>{{GF}}</td>
-              <td>{{GA}}</td>
-              <td>{{GD}}</td>
-              <td>{{Pts}}</td>
-            </tr>
-            {{/each}}
-          </tbody>
-        </table>
-        <h5>Group B</h5>
-          <table class="highlight responsive-table">
-            <thead>
-              <tr>
-                  <th>Name</th>
-                  <th>MP</th>
-                  <th>W</th>
-                  <th>D</th>
-                  <th>L</th>
-                  <th>GF</th>
-                  <th>GA</th>
-                  <th>GD</th>
-                  <th>Pts</th>
-              </tr>
-            </thead>
-            <tbody>
-              {{#each groupBplayers}}
-              <tr>
-                <td>{{name}}</td>
-                <td>{{MP}}</td>
-                <td>{{W}}</td>
-                <td>{{D}}</td>
-                <td>{{L}}</td>
-                <td>{{GF}}</td>
-                <td>{{GA}}</td>
-                <td>{{GD}}</td>
-                <td>{{Pts}}</td>
-              </tr>
-              {{/each}}
-            </tbody>
-          </table>
+      <table class="highlight responsive-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>MP</th>
+            <th>W</th>
+            <th>D</th>
+            <th>L</th>
+            <th>GF</th>
+            <th>GA</th>
+            <th>GD</th>
+            <th>Pts</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each groupAplayers}}
+          <tr>
+            <td>{{name}}</td>
+            <td>{{MP}}</td>
+            <td>{{W}}</td>
+            <td>{{D}}</td>
+            <td>{{L}}</td>
+            <td>{{GF}}</td>
+            <td>{{GA}}</td>
+            <td>{{GD}}</td>
+            <td>{{Pts}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+      <h5>Group B</h5>
+      <table class="highlight responsive-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>MP</th>
+            <th>W</th>
+            <th>D</th>
+            <th>L</th>
+            <th>GF</th>
+            <th>GA</th>
+            <th>GD</th>
+            <th>Pts</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each groupBplayers}}
+          <tr>
+            <td>{{name}}</td>
+            <td>{{MP}}</td>
+            <td>{{W}}</td>
+            <td>{{D}}</td>
+            <td>{{L}}</td>
+            <td>{{GF}}</td>
+            <td>{{GA}}</td>
+            <td>{{GD}}</td>
+            <td>{{Pts}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
     </div>
     <h1>Rounds</h1>
+    <h5>Round 1</h5>
+    <div class="row">
+      {{#each round1Games}}
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">{{type}} {{card}}</span>
+            <table class="responsive">
+              <thead>
+                <tr>
+                  <th>Host</th>
+                  <th class="center-align">Score</th>
+                  <th></th>
+                  <th class="center-align">Score</th>
+                  <th>Guest</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>{{host}}</td>
+                  <td class="center-align">{{score_host}}</td>
+                  <td class="center-align">vs</td>
+                  <td class="center-align">{{score_guest}}</td>
+                  <td>{{guest}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card-action">
+            <a target="_blank" href={{url}}>WATCH NOW!</a>
+            <span style="float:right">Winner: {{winner}}</span>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
   </div>
 </template>

@@ -138,3 +138,7 @@
 .icon-padding{
   margin-right: 10px !important;
 }
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    color: #F44336;
+}
