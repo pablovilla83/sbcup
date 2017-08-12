@@ -1,0 +1,23 @@
+<template name="players">
+<div class="container">
+  <h1>Meet the Players</h1>
+  <div class="">
+    <div class="row">
+      {{#each players}}
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">
+            <img style="height:320px;" src={{imageUrl}}>
+            <span class="card-title">{{name}}</span>
+            <a href={{youtubeUrl}} target="_blank" class="btn-floating halfway-fab waves-effect waves-light red"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+          </div>
+          <div class="card-content">
+            <p>{{desc}}</p>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
+</template>

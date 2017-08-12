@@ -3,16 +3,13 @@
     <div class="profile-bg"></div>
     <ul>
       <div class="divider"></div>
+      <li><a href="/"><i class="material-icons icon-padding">home</i>Home</a></li>
+      <li><a href="/players"><i class="material-icons icon-padding">person_pin</i>Players</a></li>
+      <li><a href="/results"><i class="material-icons icon-padding">grid_on</i>Results</a></li>
+      <li><a href="/discards"><i class="material-icons icon-padding">delete</i>Discards</a></li>
+      <li><a href="/upcoming-matches"><i class="material-icons icon-padding">insert_invitation</i>Upcoming Matches</a></li>
       {{#if currentUser}}
-        <!-- <li>{{> atNavButton}}</li> -->
-        <li><a href="/signed/home"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-        <li><a><i class="fa fa-user" aria-hidden="true"></i>Perfil</a></li>
-        <li><a><i class="fa fa-line-chart" aria-hidden="true"></i>Actividad</a></li>
-        <li><a><i class="fa fa-envelope" aria-hidden="true"></i>Mensajes</a></li>
-        <div class="divider"></div>
-        <li><a href="/signed/events"><i class="fa fa-bullhorn" aria-hidden="true"></i>Eventos</a></li>
-        <div class="divider"></div>
-        <li><a id="signOut"><i class="fa fa-power-off" aria-hidden="true"></i>Salir</a></li>
+        <li><a id="signOut"><i class="fa fa-power-off" aria-hidden="true"></i>Logout</a></li>
       {{/if}}
       <!-- <li>{{> atForm state='signIn'}}</li> -->
     </ul>

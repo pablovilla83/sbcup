@@ -32,6 +32,34 @@ FlowRouter.route('/', {
 	}
 });
 
+FlowRouter.route('/players', {
+	name: 'players',
+	action() {
+		BlazeLayout.render('mainLayout', {main: 'players'});
+	}
+});
+
+FlowRouter.route('/results', {
+	name: 'results',
+	action() {
+		BlazeLayout.render('mainLayout', {main: 'results'});
+	}
+});
+
+FlowRouter.route('/discards', {
+	name: 'discards',
+	action() {
+		BlazeLayout.render('mainLayout', {main: 'discards'});
+	}
+});
+
+FlowRouter.route('/upcoming-matches', {
+	name: 'upcoming-matches',
+	action() {
+		BlazeLayout.render('mainLayout', {main: 'upcoming-matches'});
+	}
+});
+
 var signedRoutes = FlowRouter.group({
 	prefix: '/signed',
 	// triggersEnter:[isLoggedInTrigger]

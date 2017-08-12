@@ -129,5 +129,12 @@
 
 .side-nav li > a > i, .side-nav li > a {
   height: 40px;
-  line-height: 40px;
+}
+
+.side-nav li{
+    clear: both;
+}
+
+.icon-padding{
+  margin-right: 10px !important;
 }
