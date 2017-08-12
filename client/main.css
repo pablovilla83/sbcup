@@ -19,7 +19,7 @@
  }
 
  .button-collapse {
-     color: #26a69a;
+     color: #F44336;
  }
 
  #nav-mobile {
@@ -93,15 +93,15 @@
  }
 
  #login-buttons .login-button, .accounts-dialog .login-button {
-   background: #00cdcd;
-   border: 1px solid #008181;
+   background: #F44336;
+   border: 1px solid #F44336;
    color: black;
  }
  #login-buttons .login-display-name {
-   color: #00cdcd;
+   color: #F44336;
  }
  #login-buttons .login-button:hover, .accounts-dialog .login-button:hover {
-     background: #009a9a;
+     background: #F44336;
  }
 
  .cx {
@@ -110,8 +110,8 @@
 
  .profile-bg {
    height: 220px;
-   /*background: url(./img/profile-bg.jpg);*/
-   background: url(./img/profile-4-bg.jpg);
+   background: url(./img/profile-5-bg.jpg);
+   /*background: url(./img/profile-4-bg.jpg);*/
    background-repeat:no-repeat;
  }
 
