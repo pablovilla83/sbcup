@@ -50,10 +50,6 @@
   display: block;
 }
 
- @media only screen and (min-width: 620px){
-
- }
-
  .parallax-container {
    min-height: 380px;
    line-height: 0;
@@ -141,4 +137,9 @@
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
     color: #F44336;
+}
+
+.legend {
+  font-style: italic;
+  color: gray;
 }

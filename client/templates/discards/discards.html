@@ -1,0 +1,38 @@
+<template name="discards">
+  <div class="container">
+    <h1>Discards</h1>
+    <div class="discardsContainer">
+        <canvas id="discardsByPlayer"></canvas>
+        <p class="center-align legend">This chart aggregates the number of discards from all rounds.</p>
+    </div>
+    <div class="discardsContainer">
+        <canvas id="discardsByValue"></canvas>
+        <p class="center-align legend">This chart aggregates the card value from player discards from all rounds based on the xbox value on futhead at the time of the discard. For Futties & Untradable cards the next tradeable card is used.</p>
+    </div>
+    <div class="">
+      <h5>Discard Table</h5>
+      <table class="highlight responsive-table">
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Round</th>
+            <th>Card</th>
+            <th>Type</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each allDiscards}}
+          <tr>
+            <td>{{player}}</td>
+            <td>{{round}}</td>
+            <td>{{card}}</td>
+            <td>{{type}}</td>
+            <td>{{value}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</template>

@@ -5,3 +5,8 @@ Meteor.publish('players', function(){
 Meteor.publish('games', function(){
 	return Games.find({});
 });
+
+Meteor.publish('allDiscards', function(){
+	return Discards.find({});
+	// return Discards.find({});
+});
