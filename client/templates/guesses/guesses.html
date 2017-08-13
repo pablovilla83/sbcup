@@ -1,0 +1,29 @@
+<template name="guesses">
+  <div class="container">
+    <h1>Guesses</h1>
+    <div class="discardsContainer">
+        <canvas id="guessesByPlayer"></canvas>
+        <p class="center-align legend">This chart aggregates the number of correct guesses of each player from all rounds.</p>
+    </div>
+    <div class="">
+      <h5>Given Cards Table</h5>
+      <p>After a correct guess the top 5 most given cards were:</p>
+      <table class="highlight">
+        <thead>
+          <tr>
+            <th>Card</th>
+            <th>Times</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each topGivenCards}}
+          <tr>
+            <td>{{_id}}</td>
+            <td>{{count}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</template>

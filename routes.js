@@ -53,6 +53,14 @@ FlowRouter.route('/discards', {
 	}
 });
 
+FlowRouter.route('/guesses', {
+	name: 'guesses',
+	action() {
+		BlazeLayout.render('mainLayout', {main: 'guesses'});
+	}
+});
+
+
 FlowRouter.route('/upcoming-matches', {
 	name: 'upcoming-matches',
 	action() {

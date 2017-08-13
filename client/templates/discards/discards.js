@@ -44,8 +44,8 @@ Template.discards.rendered = function() {
               'rgba(75, 192, 192, 0.2)',
               'rgba(153, 102, 255, 0.2)',
               'rgba(255, 159, 64, 0.2)',
-              'rgba(255, 159, 64, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
+              'rgba(0, 254, 254, 0.2)',
+              'rgba(255, 64, 255, 0.2)'
             ],
             borderColor: [
               'rgba(255,99,132,1)',
@@ -53,7 +53,9 @@ Template.discards.rendered = function() {
               'rgba(255, 206, 86, 1)',
               'rgba(75, 192, 192, 1)',
               'rgba(153, 102, 255, 1)',
-              'rgba(255, 159, 64, 1)'
+              'rgba(255, 159, 64, 1)',
+              'rgba(0, 254, 254, 0.2)',
+              'rgba(255, 64, 255, 0.2)'
             ],
             borderWidth: 1
           }]
@@ -106,8 +108,6 @@ Template.discards.rendered = function() {
       var values = result.map(function(item) {
         return item.valueSum;
       });
-      console.log(labels);
-      console.log(values);
       var ctx = document.getElementById("discardsByValue").getContext('2d');
       var myChart = new Chart(ctx, {
         type: 'bar',
@@ -122,8 +122,8 @@ Template.discards.rendered = function() {
               'rgba(75, 192, 192, 0.2)',
               'rgba(153, 102, 255, 0.2)',
               'rgba(255, 159, 64, 0.2)',
-              'rgba(255, 159, 64, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
+              'rgba(0, 254, 254, 0.2)',
+              'rgba(255, 64, 255, 0.2)'
             ],
             borderColor: [
               'rgba(255,99,132,1)',
@@ -131,7 +131,9 @@ Template.discards.rendered = function() {
               'rgba(255, 206, 86, 1)',
               'rgba(75, 192, 192, 1)',
               'rgba(153, 102, 255, 1)',
-              'rgba(255, 159, 64, 1)'
+              'rgba(255, 159, 64, 1)',
+              'rgba(0, 254, 254, 0.2)',
+              'rgba(255, 64, 255, 0.2)'
             ],
             borderWidth: 1
           }]
